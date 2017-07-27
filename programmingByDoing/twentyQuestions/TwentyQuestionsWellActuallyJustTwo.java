@@ -4,10 +4,15 @@ import javax.swing.*;
 
 public class TwentyQuestionsWellActuallyJustTwo {
 	public static void main(String[] args) {
+		System.out.println("Initializing program.");
+
 		String selectedOption = null;
 		boolean biggerThanABreadbox = false;
 
 		String[] options = { "Animal", "Vegetable", "Mineral" };
+
+		System.out.println("Variables set.");
+
 		Object selected = JOptionPane.showInputDialog(null, "Is it an animal, a vegetable, or a mineral?",
 				"Let's play a game", JOptionPane.QUESTION_MESSAGE, null, options, null);
 		if (selected != null) { // Null if the user cancels
