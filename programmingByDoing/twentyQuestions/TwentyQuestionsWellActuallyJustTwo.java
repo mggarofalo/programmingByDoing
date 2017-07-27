@@ -1,3 +1,4 @@
+package twentyQuestions;
 import javax.swing.*;
 
 public class TwentyQuestionsWellActuallyJustTwo {
