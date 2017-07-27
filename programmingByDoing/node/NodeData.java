@@ -5,16 +5,17 @@ public class NodeData {
 	private Object[] data = null;
 
 	// Constructs an empty NodeData
-	public NodeData () {}
+	public NodeData() {
+	}
 
 	// Constructs a NodeData
-	public NodeData ( Object data ) {
-		this.data = new Object[] {data};
+	public NodeData(Object data) {
+		this.data = new Object[] { data };
 		this.setType();
 	}
 
 	// Constructs a NodeData
-	public NodeData ( Object[] data ) {
+	public NodeData(Object[] data) {
 		this.data = data;
 		this.setType();
 	}
@@ -25,13 +26,13 @@ public class NodeData {
 	}
 
 	// Sets the NodeData's data
-	public void setData ( Object data ) {
-		this.data = new Object[] {data};
+	public void setData(Object data) {
+		this.data = new Object[] { data };
 		this.setType();
 	}
 
 	// Sets the NodeData's data
-	public void setData ( Object[] data ) {
+	public void setData(Object[] data) {
 		this.data = data;
 		this.setType();
 	}
@@ -42,7 +43,7 @@ public class NodeData {
 	}
 
 	// Returns the NodeData's data
-	public Object[] getData () {
+	public Object[] getData() {
 		return this.data;
 	}
 }
