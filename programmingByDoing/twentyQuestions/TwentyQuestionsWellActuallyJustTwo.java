@@ -12,7 +12,9 @@ public class TwentyQuestionsWellActuallyJustTwo {
 				"Let's play a game", JOptionPane.QUESTION_MESSAGE, null, options, null);
 		if (selected != null) { // Null if the user cancels
 			selectedOption = selected.toString();
+			System.out.println(selectedOption + " selected.");
 		} else {
+			System.out.println("Clicked cancel.");
 			showCancelMessage();
 		}
 
@@ -21,8 +23,10 @@ public class TwentyQuestionsWellActuallyJustTwo {
 				"How big is it?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, null);
 		if (breadbox.toString().equals("0")) {
 			biggerThanABreadbox = true;
+			System.out.println("Clicked \"Bigger\".");
 		} else if (breadbox.toString().equals("1")) {
 			biggerThanABreadbox = false;
+			System.out.println("Clicked \"Smaller\".");
 		} else {
 			System.out.println("I honestly don't know what happened in the breadbox question.");
 			System.out.println("breadbox variable string value: " + breadbox.toString());
@@ -54,6 +58,10 @@ public class TwentyQuestionsWellActuallyJustTwo {
 	static void showCancelMessage() {
 		JOptionPane.showMessageDialog(null, "Didn't want to play? Your loss. I had jokes.", "Party pooper",
 				JOptionPane.PLAIN_MESSAGE);
+
+		System.out.println("Program exit.");
+
+		System.exit(0);
 	}
 
 	static void showGuess(String s) {
