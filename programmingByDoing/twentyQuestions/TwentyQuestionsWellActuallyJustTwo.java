@@ -28,8 +28,8 @@ public class TwentyQuestionsWellActuallyJustTwo {
 			biggerThanABreadbox = false;
 			System.out.println("Clicked \"Smaller\".");
 		} else {
-			System.out.println("I honestly don't know what happened in the breadbox question.");
-			System.out.println("breadbox variable string value: " + breadbox.toString());
+			System.out.print("I honestly don't know what happened in the breadbox question. ");
+			System.out.println("Breadbox variable string value: " + breadbox.toString());
 		}
 
 		if (selectedOption.equalsIgnoreCase("Animal")) {
